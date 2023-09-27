@@ -1,0 +1,76 @@
+body{
+    background-image: url(/utils/aboutbg.jpg);
+}
+#navbar{
+    background-color: rgb(5,5,5);
+    height: 50px;
+}
+
+.collab-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+    color: white;
+    align-items: center;
+}
+tr{
+    height: 6vh;
+}
+table{
+    margin-top: 5vh;
+    font-size: 1.5rem;
+    font-family: 'Exo 2';
+}
+input, textarea{
+    width: 20vw;
+    height: 3vh;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 5px 2px black,
+    0 0px 1px 2px white;
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+}
+input:focus{
+    box-shadow: 0 0 2px 2px orange;
+}
+textarea:focus{
+    box-shadow: 0 0 2px 2px orange;
+}
+textarea{
+    height: 20vh;
+    resize: none;
+}
+
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    position: absolute;
+    right: 29.5vw;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+
+}
+#success_msg{
+    color: green;
+    margin-right: 100px;
+    font-family: 'Exo 2';
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    bottom: 15px;
+
+    visibility:hidden;
+}
