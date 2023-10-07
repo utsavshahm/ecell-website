@@ -38,7 +38,12 @@
 
         <div class="collab-container">
             <h1>Collaborate With Us</h1>
-            <form action="https://script.google.com/macros/s/AKfycbxg3kJg-X32_9gq79M-SA8I31M3izK542BUB9qXTrtCz2Vs3O75BDb7ZiN6hCqLKCsR/exec" method="post" target="p"  >
+            <form action="https://api.sheetmonkey.io/form/hUEJpiVCetH1uuZBmZFCyG" method="post" id="my-form" target="_blank" >
+                <!-- <input 
+                    type="hidden" 
+                    name="x-sheetmonkey-redirect" 
+                    value="./thankyou.html" 
+                /> -->
 
                 <table cellspacing="10">
                     <tr >
@@ -70,12 +75,10 @@
                 
             </form><br>
             <p id="success_msg">Thank you for showing your interest in collaborating with us !<br> Our PR team will reach out to you shortly.</p>
-            
-            <iframe name="iframe" style="position: absolute; visibility: hidden"></iframe>
         </div>
     
     </body>
-
+        
     <script>
         function successSubmit(){
             var msg= document.getElementById('success_msg');
