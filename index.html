@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <meta name="author" content="E-Cell IIT Goa">
         <meta name="description" content="Course learning">
         <meta name="robots" content="index, follow">
@@ -19,51 +19,64 @@
         <title>E-Cell, IIT Goa</title>
         </head>
     <body>
-
-        
         <nav id="navbar">
-            <div class="logo">
-                <img src="/utils/Logo_no_background (1) final.png" alt="">
-                <div>ECell</div>
-            </div>
-
-            
-            <div class="navbar-items">
-                <ul>
-                    <a href="./index.html"><li>Home</li></a>
-                    <a href="#about"><li>About</li></a>
-                    <li>InnoWave</li>
-                    <a href="./pages/collaborate.html"><li>Collaborate</li></a>
-                    <li>Team</li>
-
-                </ul>
-            </div>
-        </nav>
-        <div class="home">
-            <div class="overlay">
-
-                <div class="overlayed-content">
-    
-                    <div class="center-head">
-                        <div class="heading">
-                            Entrepreneurship Cell
-                            <div>IIT Goa</div>
-                        </div>
-                        <div class="tagline">Where every small Idea matters!</div>
-                    </div>
-
-
-
+           
+                <div class="logo">
+                    <img src='./utils/Logo_no_backgroundfinal.png' alt="">
+                    <div><span>E</span>-Cell</div>
                 </div>
 
+                    
+                <div class="navbar-items">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">InnoWave</a></li>
+                        <li><a href="./pages/collaborate.html">Collaborate</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+                
+                <div id="hamburger"><img src='./utils/hamburger.png' alt=''></div>
+        </nav>
+
+            <div class="home">
+                <div class="overlay">
+                    <div class="overlayed-content">
+                        <div class="center-head">
+                            <div class="heading">
+                                <p class="typewriting">
+                                    <span>E</span>
+                                    <span>n</span>
+                                    <span>t</span>
+                                    <span>r</span>
+                                    <span>e</span>
+                                    <span>p</span>
+                                    <span>r</span>
+                                    <span>e</span>
+                                    <span>n</span>
+                                    <span>e</span>
+                                    <span>u</span>
+                                    <span>r</span>
+                                    <span>s</span>
+                                    <span>h</span>
+                                    <span>i</span>
+                                    <span>p</span>
+                                    <span>-</span>
+                                    <span>C</span>
+                                    <span>e</span>
+                                    <span>l</span>
+                                    <span>l</span>
+                                </p>
+                                <p class="colored">Indian Institute of Technology Goa</p>
+                            </div>
+                            <div class="tagline">Where every small Idea matters!</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-
         <div class="rest-body">
-
-            <div class="overlay">
-    
                 <div class="container">
         
                     <div class="about-content" id="about">
@@ -79,7 +92,7 @@
 
                     <div class="events">
                         <div class="events-first">
-                            <div class="event-card">
+                            <div class="event-card workshops">
                                 <div class="card-head">
                                     <img src="utils/icons8-bulb-64.png" alt="">
                                     <h3>Workshops</h3>
@@ -119,11 +132,6 @@
         
                     
                 </div>
-    
-    
-            </div>
-
-
         </div>
 
         <footer>
@@ -136,34 +144,34 @@
                     <div class="footer-content">
     
                         <h2>Visit Us</h2>
-                        <p>Bhausaheb Bandodkar Technical Education Complex, Goa Engineering College Campus, Farmagudi, Ponda, Goa 403401</p>
+                        <p>Bhausaheb Bandodkar Technical</p> <p>Education Complex,</p> <p>Goa Engineering College Campus,</p> <p>Farmagudi, Ponda,</p> <p>Goa 403401</p>
     
                     </div>
                 </div>
     
-                <div class="footer-item links">
+                <!-- <div class="footer-item links">
                     <div class="footer-content">
     
                         <h2>Navigate</h2>
                         <ul>
-                            <a href="#about"><li>About</li></a>
-                            <li>InnoWave</li>
-                            <li>Collaborate</li>
-                            <li>Team</li>
-                            <li>Contact</li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#">InnoWave</a></li>
+                            <li><a href="#">Collaborate</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
     
                     </div>
-                </div>
+                </div> -->
     
                 <div class="footer-item reach">
                     <div class="footer-content">
     
                         <h2>Follow Us</h2>
                         <ul>
-                            <li>LinkedIn</li>
-                            <li>Instagram</li>
-                            <li>Email</li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Email</a></li>
                         </ul>
     
                     </div>
@@ -171,12 +179,46 @@
 
             </div>
 
-            <div class="footer-copyright">Made with &#10084; : E-Cell IIT Goa</div>
+            <div class="footer-copyright">Made with <span>&#10084;</span> : E-Cell IIT Goa</div>
         </footer>
 
     </body>
     <script>
-        
+        let navbar = document.querySelector('#navbar')
+        let navbarLinks = document.querySelector('.navbar-items ul');
+        let hamburgerBtn = document.querySelector('#hamburger');
+        let navbarList = document.querySelectorAll('.navbar-items ul li a');
+        var isShow = false;
+        function show(){
+            navbarLinks.style.left = "0";
+            hamburgerBtn.innerHTML = "<img src='./utils/close.png' alt=''>";
+            isShow = true;
+        }
+        function hide(){
+            navbarLinks.style.left = "-100%";
+            hamburgerBtn.innerHTML = "<img src='./utils/hamburger.png' alt=''>";
+            isShow = false;
+        }
+
+        hamburgerBtn.addEventListener("click", () => {
+            if (isShow){
+                hide();
+            }else{
+                show();
+            }
+        })
+
+        navbarList.forEach((link) => {
+            link.addEventListener('click', hide);
+        })
+
+        window.onscroll = function(){
+            if (document.documentElement.scrollTop > 20){
+                navbar.classList.add('active');
+            }else{
+                navbar.classList.remove('active');
+            }
+        }
     </script>
 
 </html>

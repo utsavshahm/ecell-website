@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <meta name="author" content="E-Cell IIT Goa">
         <meta name="description" content="Collaboration section of E-Cell IIT Goa">
         <meta name="robots" content="index, follow">
-        <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="collaborate_style.css">
         <link rel="icon" href="/favicon.ico">
         <link rel="icon" href="/favicon.svg">
@@ -20,21 +19,25 @@
 
         
         <nav id="navbar">
+           
             <div class="logo">
-                <img src="/utils/Logo_no_background (1) final.png" alt="">
-                <div>E-Cell</div>
+                <img src='../utils/Logo_no_backgroundfinal.png' alt="">
+                <div><span>E</span>-Cell</div>
             </div>
-            
+
+                
             <div class="navbar-items">
                 <ul>
-                    <a href="../index.html"><li>Home</li></a>
-                    <a href="../index.html#about"><li>About</li></a>
-                    <li>InnoWave</li>
-                    <a href="./collaborate.html"><li>Collaborate</li></a>
-                    <li>Team</li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html/#about">About</a></li>
+                    <li><a href="#">InnoWave</a></li>
+                    <li><a href="./pages/collaborate.html">Collaborate</a></li>
+                    <li><a href="#">Team</a></li>
                 </ul>
             </div>
-        </nav>
+            
+            <div id="hamburger"><img src='../utils/hamburger.png' alt=''></div>
+    </nav>
 
         <div class="collab-container">
             <h1>Collaborate With Us</h1>
@@ -80,6 +83,42 @@
     </body>
         
     <script>
+
+        let navbar = document.querySelector('#navbar')
+        let navbarLinks = document.querySelector('.navbar-items ul');
+        let hamburgerBtn = document.querySelector('#hamburger');
+        let navbarList = document.querySelectorAll('.navbar-items ul li a');
+        var isShow = false;
+        function show(){
+            navbarLinks.style.left = "0";
+            hamburgerBtn.innerHTML = "<img src='../utils/close.png' alt=''>";
+            isShow = true;
+        }
+        function hide(){
+            navbarLinks.style.left = "-100%";
+            hamburgerBtn.innerHTML = "<img src='../utils/hamburger.png' alt=''>";
+            isShow = false;
+        }
+
+        hamburgerBtn.addEventListener("click", () => {
+            if (isShow){
+                hide();
+            }else{
+                show();
+            }
+        })
+
+        navbarList.forEach((link) => {
+            link.addEventListener('click', hide);
+        })
+
+        window.onscroll = function(){
+            if (document.documentElement.scrollTop > 20){
+                navbar.classList.add('active');
+            }else{
+                navbar.classList.remove('active');
+            }
+        }
         function successSubmit(){
             var msg= document.getElementById('success_msg');
             msg.style.visibility='visible';
