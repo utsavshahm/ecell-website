@@ -11,9 +11,9 @@ nav{
     left : 0;
     display : flex;
     align-items : center;
-    justify-content : space-between;
+    justify-content : space-around;
     width : 100%;
-    padding : 20px 10%;
+    padding : 20px 0;
     font-family: "Poppins";
     z-index : 100;
 }
@@ -89,14 +89,14 @@ nav a:hover::after{
 }
 .active{
     /* background : hsla(0, 100%, 100%, .8); */
-    background : #333;
+    background : #121212;
 }
 
 /* Main Page */
 .collab-container{
     display: flex;
     flex-direction: column;
-    margin-top: 25vh;
+    margin-top: 18vh;
     color: white;
     align-items: center;
 }
@@ -132,6 +132,11 @@ textarea{
     resize: none;
 }
 
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn{
     background-color: transparent;
     border: 1px solid white;
@@ -139,8 +144,8 @@ textarea{
     font-size: 1.2rem;
     color: white;
     display: flex;
-    position: absolute;
-    right: 29.5vw;
+    /* position: absolute;
+    right: 29.5vw; */
     transition: all 0.2s;
     cursor: pointer;
 }
@@ -191,5 +196,14 @@ textarea{
     }
     #hamburger{
         display : block;
+    }
+
+    td{
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+    input, textarea{
+        width: 100%;
     }
 }

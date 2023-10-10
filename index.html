@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#">InnoWave</a></li>
+                        <li><a href="/pages/innowave.html">InnoWave</a></li>
                         <li><a href="./pages/collaborate.html">Collaborate</a></li>
                         <li><a href="#">Team</a></li>
                     </ul>
@@ -45,7 +45,7 @@
                     <div class="overlayed-content">
                         <div class="center-head">
                             <div class="heading">
-                                <p class="typewriting">
+                                <p class="typewriting" id="typewrite">
                                     <span>E</span>
                                     <span>n</span>
                                     <span>t</span>
@@ -62,7 +62,7 @@
                                     <span>h</span>
                                     <span>i</span>
                                     <span>p</span>
-                                    <span>-</span>
+                                    <span>&nbsp;</span>
                                     <span>C</span>
                                     <span>e</span>
                                     <span>l</span>
@@ -70,7 +70,7 @@
                                 </p>
                                 <p class="colored">Indian Institute of Technology Goa</p>
                             </div>
-                            <div class="tagline">Where every small Idea matters!</div>
+                            <span class="tagline" id="tagline"></span>
                         </div>
                     </div>
                 </div>
@@ -109,8 +109,7 @@
                                 <div class="card-desc">
                                     Ecell of IIT Goa is your launchpad for competition success. We foster a competitive spirit and provide a platform for you to shine in entrepreneurial and innovation challenges. Join us to conquer the competition and make your mark. </div>
                             </div>
-                        </div>   
-                        <div class="events-first">
+
                             <div class="event-card">
                                 <div class="card-head">
                                     <img src="utils/icons8-chat-64.png" alt="">
@@ -119,6 +118,9 @@
 
                                 <div class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo error ut illo quisquam ad quam! A esse adipisci numquam perferendis molestiae beatae quibusdam, debitis rerum accusamus quo! Sed blanditiis corporis totam iusto distinctio unde quidem.</div>
                             </div>
+                        </div>   
+                        <!-- <div class="events-first">
+                            
                             <div class="event-card">
                                 <div class="card-head">
                                     <img src="utils/icons8-writing-64.png" alt="">
@@ -127,11 +129,42 @@
 
                                 <div class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo error ut illo quisquam ad quam! A esse adipisci numquam perferendis molestiae beatae quibusdam, debitis rerum accusamus quo! Sed blanditiis corporis totam iusto distinctio unde quidem.</div>
                             </div>
-                        </div>   
+                        </div>    -->
+                    </div>
+
+
+                    <div class="innowave-desc" id="innowave">
+        
+                        <h1>InnoWave: Entrepreneurial Magazine of IIT Goa</h1>
+                        <p>
+                            <b> Ecell of IIT Goa</b>: Where Every Small Idea Matters
+                
+                            In the heart of innovation and entrepreneurship, Ecell of IIT Goa proudly stands as the catalyst for change. We believe that every small idea carries the potential to create something extraordinary. Our mission is simple yet powerful: to nurture, support, and celebrate these small ideas, transforming them into impactful ventures. With a vibrant community of like-minded individuals, we foster a culture of creativity and collaboration. Embrace the power of small ideas, and together, let's prove that even the smallest of ideas can make a big difference.</p>
+
+                        <button class="read-btn"><a href="/pages/innowave.html">Read Here</a></button>
+        
+        
                     </div>
         
                     
+                    <div class="collab">
+                        <table>
+                            <tr>
+                                <td><input type="text" placeholder="Input Field 1"></td>
+                                <td rowspan="3"><textarea placeholder="Your Message"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="Input Field 2"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="Input Field 3"></td>
+                            </tr>
+                        </table>
+                        <button>Send Message</button>
+                    </div>
                 </div>
+
+
         </div>
 
         <footer>
@@ -183,6 +216,7 @@
         </footer>
 
     </body>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         let navbar = document.querySelector('#navbar')
         let navbarLinks = document.querySelector('.navbar-items ul');
@@ -219,6 +253,14 @@
                 navbar.classList.remove('active');
             }
         }
+
+
+        var typed = new Typed('#tagline', {
+        strings: ['Ignite', 'Ideate', 'Innovate', 'Inspire', 'Where every small Idea matters!'],
+        typeSpeed: 75,
+        loop:true
+        });
+    
     </script>
 
 </html>

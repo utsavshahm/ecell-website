@@ -99,7 +99,7 @@ nav a:hover::after{
 }
 .active{
     /* background : hsla(0, 100%, 100%, .8); */
-    background : #333;
+    background : #121212;
 }
 
 /* Home Section */
@@ -142,7 +142,7 @@ nav a:hover::after{
     color : white;
 }
 .typewriting{
-    color : #000;
+    color : black;
     display : inline-block;
     margin : 0 auto;
     position : relative;
@@ -219,18 +219,18 @@ nav a:hover::after{
 
 @keyframes animate{
     0%, 100%{
-        color : #fff;
-        filter : blur(2px);
-        text-shadow: 0 0 10px orange,
+        color : white;
+        filter : blur(1px);
+        text-shadow:
                     0 0 20px orange,
-                    0 0 40px orange,
+                    /* 0 0 40px orange,
                     0 0 80px orange,
-                    0 0 120px orange,
+                    0 0 120px orange, */
                     0 0 200px orange,
-                    0 0 300px orange;
+                    0 0 400px orange;
     }
     5%, 95%{
-        color : #000;
+        color : orange;
         filter : blur(0px);
         text-shadow : 0 0 10px none;
     }
@@ -238,7 +238,7 @@ nav a:hover::after{
 .tagline{
     font-family: 'Lora';
     font-size: 1.5rem;
-    color : orange;
+    color : #fcc419;
     letter-spacing: 2px;
 }
 
@@ -265,10 +265,10 @@ nav a:hover::after{
     gap : 50px;
     /* color: rgba(226, 226, 226, 0.764); */
     color : #ccc;
-    max-width : 900px;
-    width : 80%;
+    max-width : 70%;
+    /* width : 75%; */
 }
-.about-content{
+.about-content, .innowave-desc{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,10 +277,10 @@ nav a:hover::after{
     font-size: 1.3rem;
     line-height: 1.7;
 }
-.about-content h1{
+.about-content h1, .innowave-desc h1{
     margin-top: 1.5rem;
     font-size: 2.2rem;
-    color: orange;
+    color: #fcc419;
     letter-spacing : 1.5px;
 }
 .about-content p{
@@ -292,14 +292,16 @@ nav a:hover::after{
     justify-content: space-between;
     align-items : center;
     flex-wrap : wrap;
-    gap : 50px;
+    width: inherit;
+    gap : 5px;
 }
 .event-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    max-width : 400px;
+    max-width : 350px;
+    min-height: 500px;
     transition : 0.5s ease;
     cursor : pointer;
 }
@@ -325,11 +327,78 @@ nav a:hover::after{
     color : #fff;
 }
 
+
+/* Innowave section : only button */
+
+.read-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    display: flex;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.read-btn a{
+    color: white;
+    text-decoration: none;
+}
+.read-btn:hover{
+    transform: scale(1.05);
+    background-color: #fcc419;
+    color: #121212;;
+}
+
+
+.collab{
+    min-height: 35vh;
+    max-height: 100vh;
+    width: 70vw;
+}
+table{
+    margin-top: 5vh;
+    width: inherit;
+    
+    font-size: 1.5rem;
+    font-family: 'Exo 2';
+    border: none;
+    /* outline: none; */
+}
+td{
+    width: 30vw;
+    height: 8vh;
+}
+input, textarea{
+    width: inherit;
+    height: 5vh;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 5px 2px black,
+    0 0px 1px 2px white;
+    color: white;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+}
+input:focus{
+    box-shadow: 0 0 2px 2px orange;
+}
+textarea:focus{
+    box-shadow: 0 0 2px 2px orange;
+}
+textarea{
+    height: calc();
+    resize: none;
+}
 /* Footer Section */
 
 footer{
     /* background-color: rgb(18, 17, 17); */
-    background : #222;
+    background : #121212;
     padding : 20px;
 }
 .footer-main-content{
@@ -363,7 +432,7 @@ footer{
     line-height: 1.6;
 } */
 .footer-item h2{
-    color: orange;
+    color: #fcc419;
     /* margin-bottom: 10px; */
     font-family: 'Exo 2';
 }
