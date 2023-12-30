@@ -43,6 +43,7 @@ nav{
 }
 .navbar-items ul li{
     display : inline-block;
+    margin-right: 30px;
 }
 nav a{
     text-decoration : none;
