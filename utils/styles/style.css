@@ -64,7 +64,7 @@ nav a::after{
     content : '';
     position : absolute;
     bottom : -10px;
-    left : 5px;
+    left : 0px;
     height : 2px;
     width : 0;
     background-color : orange;
@@ -77,14 +77,9 @@ nav a:hover::after{
     display : none;
     height : 30px;
     width : 30px;
-    border-radius : 50%;
     padding : 4px;
-    border : 2px solid white;
     transition : 0.5s ease;
     cursor : pointer;
-}
-#hamburger:hover{
-    border : 2px solid orange;
 }
 #hamburger img{
     height : 17px;
@@ -92,10 +87,9 @@ nav a:hover::after{
     filter : invert(100%);
     cursor : pointer;
     transition : 0.5s ease;
-    border-radius : 50%;
 }
 #hamburger img:hover{
-    filter : invert(80%);
+    filter : invert(60%);
 }
 .active{
     /* background : hsla(0, 100%, 100%, .8); */
@@ -105,7 +99,7 @@ nav a:hover::after{
 /* Home Section */
 
 .home{
-    background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('utils/bgimg.jpg');
+    background-image : linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/bgimg.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position : center;
@@ -245,14 +239,13 @@ nav a:hover::after{
 
 /* About us section */
 .rest-body{
-    background-image: url(utils/aboutbg.jpg);
+    background-image: url(../img/aboutbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color : #fff;
     min-height : 100vh;
     padding-top : 10%;
-    padding-bottom : 10%;
     display : flex;
     align-items : center;
     justify-content : center;
@@ -287,6 +280,10 @@ nav a:hover::after{
     word-spacing : 5px;
     font-family : "Poppins";
 }
+.innowave-desc p{
+    word-spacing : 5px;
+    font-family : "Poppins";
+}
 .events-first{
     display: flex;
     justify-content: space-between;
@@ -318,13 +315,13 @@ nav a:hover::after{
     height: 60px;
 }
 .card-desc{
-    font-family: 'Lexend Deca';
+    font-family: 'Poppins';
     line-height: 1.7;
     text-align: justify;
     font-size: 1.3rem;
     margin: 1vw 2vw;
     word-spacing: 2px;
-    color : #fff;
+    color : #ccc;
 }
 
 
@@ -349,31 +346,54 @@ nav a:hover::after{
 .read-btn:hover{
     transform: scale(1.05);
     background-color: #fcc419;
-    color: #121212;;
+    color: white;
 }
 
+.collab-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 45px;
 
-.collab{
-    min-height: 35vh;
-    max-height: 100vh;
-    width: 70vw;
 }
-table{
-    margin-top: 5vh;
+.collab-container h1{
+    color: #fcc419;
+    font-size: 2.2rem;
+}
+.collaborate-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 3vw;
+    width: 100%;
+    height: inherit;
+    font-family: "Poppins";
+    font-size: 1.2rem;
+
+}
+
+.fields, .msg-container{
+    /* width: 25vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.input-field, .text-msg{
     width: inherit;
-    
-    font-size: 1.5rem;
-    font-family: 'Exo 2';
-    border: none;
-    /* outline: none; */
 }
-td{
-    width: 30vw;
-    height: 8vh;
+.text-msg{
+    height: inherit;
+}
+label{
+    margin-bottom: 20px;
 }
 input, textarea{
-    width: inherit;
-    height: 5vh;
+    width: 25vw;
+    height: inherit;
     font-size: 1.2rem;
     outline: none;
     background-color: transparent;
@@ -391,9 +411,34 @@ textarea:focus{
     box-shadow: 0 0 2px 2px orange;
 }
 textarea{
-    height: calc();
+    height: 40vh;
+    width: 25vw;
     resize: none;
+
 }
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 36px;
+}
+#success_msg{
+    color: green;
+    margin-right: 100px;
+    font-family: 'Exo 2';
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    bottom: 15px;
+
+    visibility:hidden;
+}
+
+
+
+
 /* Footer Section */
 
 footer{
@@ -494,6 +539,21 @@ footer ul li a:hover{
         justify-content : center;
         gap : 10px;
     }
+    .about-content h1{
+        font-size : 2.2rem;
+    }
+    .innowave-desc h1{
+        font-size : 2.2rem;
+    }
+    .about-content p{
+        font-size : 1.2rem;
+    }
+    .innowave-desc p{
+        font-size : 1rem;
+    }
+    .card-desc{
+        font-size : 1.2rem;
+    }
 }
 
 @media only screen and (max-width : 900px){
@@ -506,18 +566,41 @@ footer ul li a:hover{
     .colored{
         font-size : 1.75rem;
     }
+    input, textarea{
+        width: 75vw;
+    }
+    .collaborate-all{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        font-size: large;
+    
+    }
+    textarea{
+        height: 15vh;
+    }
+
+}
+
+@media only screen and (min-width:560px) and (max-width:750px){
+    .about-content h1{
+        font-size : 2.2rem;
+    }
+    .innowave-desc h1{
+        font-size : 2.2rem;
+    }
+    .about-content p{
+        font-size : 1.2rem;
+    }
+    .innowave-desc p{
+        font-size : 1.2rem;
+    }
+    .card-desc{
+        font-size : 1.3rem;
+    }
 }
 @media only screen and (max-width : 750px){
     
-    .about-content h1{
-        font-size : 1.5rem;
-    }
-    .about-content{
-        font-size : 1rem;
-    }
-    .card-desc{
-        font-size : 1rem;
-    }
     .navbar-items ul{
         position : absolute;
         top : 0;
@@ -547,6 +630,7 @@ footer ul li a:hover{
     #hamburger{
         display : block;
     }
+    
 }
 
 @media only screen and (max-width : 425px){

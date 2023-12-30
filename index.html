@@ -7,7 +7,7 @@
         <meta name="author" content="E-Cell IIT Goa">
         <meta name="description" content="Course learning">
         <meta name="robots" content="index, follow">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./utils/styles/style.css">
         <link rel="icon" href="/favicon.ico">
         <link rel="icon" href="/favicon.svg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,13 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Comic+Neue:wght@300&family=Exo+2&family=Lexend+Deca:wght@100&family=Lora&family=Poppins:ital,wght@0,200;1,100&family=Raleway:wght@500&family=Varela+Round&family=Vazirmatn:wght@100&display=swap" rel="stylesheet">
 
-        <title>E-Cell, IIT Goa</title>
+        <title>Entrepreneurship Cell, IIT Goa</title>
         </head>
     <body>
         <nav id="navbar">
            
                 <div class="logo">
-                    <img src='./utils/Logo_no_backgroundfinal.png' alt="">
+                    <img src='./utils/img/Logo_no_backgroundfinal.png' alt="">
                     <div><span>E</span>-Cell</div>
                 </div>
 
@@ -32,12 +32,12 @@
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="/pages/innowave.html">InnoWave</a></li>
-                        <li><a href="./pages/collaborate.html">Collaborate</a></li>
-                        <li><a href="#">Team</a></li>
+                        <li><a href="#collaborate">Collaborate</a></li>
+                        <li><a href="./pages/team.html">Team</a></li>
                     </ul>
                 </div>
                 
-                <div id="hamburger"><img src='./utils/hamburger.png' alt=''></div>
+                <div id="hamburger"><img src='./utils/img/hamburger.png' alt=''></div>
         </nav>
 
             <div class="home">
@@ -94,7 +94,7 @@
                         <div class="events-first">
                             <div class="event-card workshops">
                                 <div class="card-head">
-                                    <img src="utils/icons8-bulb-64.png" alt="">
+                                    <img src="./utils/img/icons8-bulb-64.png" alt="">
                                     <h3>Workshops</h3>
                                 </div>
 
@@ -102,7 +102,7 @@
                             </div>
                             <div class="event-card">
                                 <div class="card-head">
-                                    <img src="utils/icons8-leaderboard-53.png" alt="">
+                                    <img src="./utils/img/icons8-leaderboard-53.png" alt="">
                                     <h3>Competitions</h3>
                                 </div>
 
@@ -112,7 +112,7 @@
 
                             <div class="event-card">
                                 <div class="card-head">
-                                    <img src="utils/icons8-chat-64.png" alt="">
+                                    <img src="./utils/img/icons8-chat-64.png" alt="">
                                     <h3>Talks</h3>
                                 </div>
 
@@ -146,21 +146,66 @@
         
                     </div>
         
-                    
-                    <div class="collab">
-                        <table>
-                            <tr>
-                                <td><input type="text" placeholder="Input Field 1"></td>
-                                <td rowspan="3"><textarea placeholder="Your Message"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Input Field 2"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" placeholder="Input Field 3"></td>
-                            </tr>
-                        </table>
-                        <button>Send Message</button>
+                    <div class="collab-container" id="collaborate">
+                        <h1>Collaborate With Us</h1>
+                        <form action="https://api.sheetmonkey.io/form/hUEJpiVCetH1uuZBmZFCyG" method="post" id="my-form" target="_blank" >
+                            <!-- <input 
+                                type="hidden" 
+                                name="x-sheetmonkey-redirect" 
+                                value="./thankyou.html" 
+                            /> -->
+                            
+                            <div class="collaborate-all">
+                                <div class="fields">
+            
+                                    <div class="input-field">
+                                        <label for="Name" style="display: block;">Your organisation name: </label>
+                                        <input type="text" name="Name" class="field" required>
+            
+                                    </div>
+            
+                                    <div class="input-field">
+                                        
+                                        <label for="Name" style="display: block;">How do you want to collaborate?: </label>
+                                        <input type="text" name="collaborate" class="field" required>
+            
+                                    </div>
+                                    <div class="input-field">
+            
+                                        <label for="Mail" style="display: block;">Your Email : </label>
+                                        <input type="email" name="Email" class="field" onfocus="successMsg()" required>
+            
+                                    </div>
+                                    <div class="input-field">
+            
+                                        <label for="Phone" style="display: block;">Your phone number (optional): </label>
+                                        <input type="text" name="Phone" class="field" >
+                                        
+                                    </div>
+                                    
+                               
+                                </div>
+            
+                                <div class="msg-container">
+            
+                                    <div class="text-msg">
+                                    
+                                        <label for="Message" style="display: block;">Your Message: </label>
+                                        <textarea name="Message" class="field" required></textarea>
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+                            
+                            <div class="submit-btn">
+            
+                                <button type="submit" class="read-btn">Submit</button>
+            
+                            </div>
+                            
+                        </form><br>
+                        <p id="success_msg">Thank you for showing your interest in collaborating with us !<br> Our PR team will reach out to you shortly.</p>
                     </div>
                 </div>
 
@@ -202,9 +247,9 @@
     
                         <h2>Follow Us</h2>
                         <ul>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/entrepreneurship-cell-iit-goa-b71680225" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/ecell_iitgoa/" target="_blank">Instagram</a></li>
+                            <li><a href="mailto:ecell@iitgoa.ac.in" target="_blank">Email</a></li>
                         </ul>
     
                     </div>
@@ -247,7 +292,7 @@
         })
 
         window.onscroll = function(){
-            if (document.documentElement.scrollTop > 20){
+            if (document.documentElement.scrollTop > 0){
                 navbar.classList.add('active');
             }else{
                 navbar.classList.remove('active');

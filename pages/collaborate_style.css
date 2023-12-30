@@ -99,18 +99,42 @@ nav a:hover::after{
     margin-top: 18vh;
     color: white;
     align-items: center;
+    height: 100vh;
 }
-tr{
-    height: 6vh;
+
+.collaborate-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 3vw;
+    width: 100%;
+    height: inherit;
+    font-family: "Poppins";
+    font-size: 1.2rem;
+
 }
-table{
-    margin-top: 5vh;
-    font-size: 1.5rem;
-    font-family: 'Exo 2';
+
+.fields, .msg-container{
+    /* width: 25vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.input-field, .text-msg{
+    width: inherit;
+}
+.text-msg{
+    height: inherit;
+}
+label{
+    margin-bottom: 20px;
 }
 input, textarea{
-    width: 20vw;
-    height: 3vh;
+    width: inherit;
+    height: inherit;
     font-size: 1.2rem;
     outline: none;
     background-color: transparent;
@@ -128,14 +152,17 @@ textarea:focus{
     box-shadow: 0 0 2px 2px orange;
 }
 textarea{
-    height: 20vh;
+    height: 38vh;
     resize: none;
+
 }
 
 .submit-btn{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 36px;
 }
 .btn{
     background-color: transparent;
@@ -198,12 +225,17 @@ textarea{
         display : block;
     }
 
-    td{
-        display: block;
-        text-align: center;
-        margin: 20px 0;
-    }
     input, textarea{
         width: 100%;
+    }
+    .collaborate-all{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        font-size: large;
+    
+    }
+    textarea{
+        height: 15vh;
     }
 }

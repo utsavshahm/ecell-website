@@ -32,12 +32,12 @@
                     <li><a href="../index.html/#about">About</a></li>
                     <li><a href="../pages/innowave.html">InnoWave</a></li>
                     <li><a href="./pages/collaborate.html">Collaborate</a></li>
-                    <li><a href="#">Team</a></li>
+                    <li><a href="./team.html">Team</a></li>
                 </ul>
             </div>
             
             <div id="hamburger"><img src='../utils/hamburger.png' alt=''></div>
-    </nav>
+        </nav>                      
 
         <div class="collab-container">
             <h1>Collaborate With Us</h1>
@@ -47,32 +47,49 @@
                     name="x-sheetmonkey-redirect" 
                     value="./thankyou.html" 
                 /> -->
+                
+                <div class="collaborate-all">
+                    <div class="fields">
 
-                <table cellspacing="10">
-                    <tr >
-                        <td><label for="Name">Your organisation name: </label></td>
-                        <td><input type="text" name="Name" class="field" required></td>
-                    </tr>
-                    <tr >
-                        <td><label for="Name">How do you want to collaborate?: </label></td>
-                        <td><input type="text" name="collaborate" class="field" required></td>
-                    </tr>
+                        <div class="input-field">
+                            <label for="Name" style="display: block;">Your organisation name: </label>
+                            <input type="text" name="Name" class="field" required>
 
-                    <tr>
-                        <td><label for="Mail">Your Email : </label></td>
-                        <td><input type="email" name="Email" class="field" onfocus="successMsg()" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Phone">Your phone number (optional): </label></td>
-                        <td><input type="text" name="Phone" class="field" ></td>
-                    </tr>
-                    <tr>
-                        <td><label for="Message">Your Message: </label></td>
-                        <td><textarea name="Message" class="field"  required></textarea></td>
-                    </tr>
+                        </div>
 
+                        <div class="input-field">
+                            
+                            <label for="Name" style="display: block;">How do you want to collaborate?: </label>
+                            <input type="text" name="collaborate" class="field" required>
 
-                </table>
+                        </div>
+                        <div class="input-field">
+
+                            <label for="Mail" style="display: block;">Your Email : </label>
+                            <input type="email" name="Email" class="field" onfocus="successMsg()" required>
+
+                        </div>
+                        <div class="input-field">
+
+                            <label for="Phone" style="display: block;">Your phone number (optional): </label>
+                            <input type="text" name="Phone" class="field" >
+                            
+                        </div>
+                        
+                   
+                    </div>
+
+                    <div class="msg-container">
+
+                        <div class="text-msg">
+                        
+                            <label for="Message" style="display: block;">Your Message: </label>
+                            <textarea name="Message" class="field" required></textarea>
+                        </div>
+
+                    </div>
+
+                </div>
                 
                 <div class="submit-btn">
 
