@@ -43,4 +43,42 @@
             <p class="cs-text">COMING SOON!</p>
         </div>
     </body>
+    <script>
+        let navbar = document.querySelector('#navbar')
+        let navbarLinks = document.querySelector('.navbar-items ul');
+        let hamburgerBtn = document.querySelector('#hamburger');
+        let navbarList = document.querySelectorAll('.navbar-items ul li a');
+        var isShow = false;
+        function show(){
+            navbarLinks.style.left = "0";
+            hamburgerBtn.innerHTML = "<img src='../utils/img/close.png' alt=''>";
+            isShow = true;
+        }
+        function hide(){
+            navbarLinks.style.left = "-100%";
+            hamburgerBtn.innerHTML = "<img src='../utils/img/hamburger.png' alt=''>";
+            isShow = false;
+        }
+
+        hamburgerBtn.addEventListener("click", () => {
+            if (isShow){
+                hide();
+            }else{
+                show();
+            }
+        })
+
+        navbarList.forEach((link) => {
+            link.addEventListener('click', hide);
+        })
+
+        window.onscroll = function(){
+            if (document.documentElement.scrollTop > 0){
+                navbar.classList.add('active');
+            }else{
+                navbar.classList.remove('active');
+            }
+        }
+    
+    </script>
     </html>

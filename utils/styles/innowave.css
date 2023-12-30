@@ -38,9 +38,6 @@ nav{
 .navbar-items ul li{
     display : inline-block;
 }
-.navbar-items ul li:not(:last-of-type){
-    margin-right : 30px;
-}
 nav a{
     text-decoration : none;
     color : #eee;
@@ -54,7 +51,7 @@ nav a::after{
     content : '';
     position : absolute;
     bottom : -10px;
-    left : 5px;
+    left : 0px;
     height : 2px;
     width : 0;
     background-color : orange;
@@ -67,14 +64,9 @@ nav a:hover::after{
     display : none;
     height : 30px;
     width : 30px;
-    border-radius : 50%;
     padding : 4px;
-    border : 2px solid white;
     transition : 0.5s ease;
     cursor : pointer;
-}
-#hamburger:hover{
-    border : 2px solid orange;
 }
 #hamburger img{
     height : 17px;
@@ -82,10 +74,9 @@ nav a:hover::after{
     filter : invert(100%);
     cursor : pointer;
     transition : 0.5s ease;
-    border-radius : 50%;
 }
 #hamburger img:hover{
-    filter : invert(80%);
+    filter : invert(60%);
 }
 .active{
     /* background : hsla(0, 100%, 100%, .8); */
@@ -107,4 +98,38 @@ nav a:hover::after{
     font-family: 'Exo 2', sans-serif; /* Use your desired font */
     margin-bottom: 20px; /* Add space below the text */
     color: white;
+}
+
+@media only screen and (max-width : 750px){
+    
+    .navbar-items ul{
+        position : absolute;
+        top : 0;
+        left : -100%;
+        height : 100vh;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        flex-direction: column;
+        background: hsla(0, 0, 100%, 0.2);
+        backdrop-filter: blur(24px);
+        --webkit-backdrop-filter: blur(24px);
+        width : 70vw;
+        transition : 0.5s ease;
+        text-align : center;
+        position : absolute;
+    }
+    .navbar-items ul li{
+        font-size : 1.6rem;
+        margin-bottom : 20px;
+        /* text-align : center; */
+    }
+    .navbar-items ul li a{
+        color : #eee;
+        font-weight : bold;
+    }
+    #hamburger{
+        display : block;
+    }
+    
 }

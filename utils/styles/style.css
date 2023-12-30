@@ -48,9 +48,6 @@ nav{
 .navbar-items ul li{
     display : inline-block;
 }
-.navbar-items ul li:not(:last-of-type){
-    margin-right : 30px;
-}
 nav a{
     text-decoration : none;
     color : #eee;
@@ -619,9 +616,8 @@ footer ul li a:hover{
         position : absolute;
     }
     .navbar-items ul li{
-        font-size : 1.5rem;
+        font-size : 1.6rem;
         margin-bottom : 20px;
-        text-align : center;
     }
     .navbar-items ul li a{
         color : #eee;

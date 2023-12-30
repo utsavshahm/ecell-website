@@ -37,9 +37,6 @@ nav{
 .navbar-items ul li{
     display : inline-block;
 }
-.navbar-items ul li:not(:last-of-type){
-    margin-right : 30px;
-}
 nav a{
     text-decoration : none;
     color : #eee;
@@ -66,14 +63,9 @@ nav a:hover::after{
     display : none;
     height : 30px;
     width : 30px;
-    border-radius : 50%;
     padding : 4px;
-    border : 2px solid white;
     transition : 0.5s ease;
     cursor : pointer;
-}
-#hamburger:hover{
-    border : 2px solid orange;
 }
 #hamburger img{
     height : 17px;
@@ -81,10 +73,9 @@ nav a:hover::after{
     filter : invert(100%);
     cursor : pointer;
     transition : 0.5s ease;
-    border-radius : 50%;
 }
 #hamburger img:hover{
-    filter : invert(80%);
+    filter : invert(60%);
 }
 .active{
     /* background : hsla(0, 100%, 100%, .8); */
@@ -132,9 +123,9 @@ nav a:hover::after{
     position : absolute;
 }
 .navbar-items ul li{
-    font-size : 1.5rem;
+    font-size : 1.6rem;
     margin-bottom : 20px;
-    text-align : center;
+    /* text-align : center; */
 }
 .navbar-items ul li a{
     color : #eee;
