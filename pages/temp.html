@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Clip Animation | CodingNepal</title>
+
+    <style>
+
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: -webkit-linear-gradient(136deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
+        }
+        /* .wrapper{
+        position: relative;
+        width: 700px;
+        height: 400px;
+        }
+        .wrapper .img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+        .wrapper .img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        clip-path: circle(0% at 0% 100%);
+        transition: all 0.7s;
+        }
+        #one:checked ~ .img-1 img{
+        clip-path: circle(150% at 0% 100%);
+        }
+        #two:checked ~ .img-1 img,
+        #two:checked ~ .img-2 img{
+        clip-path: circle(150% at 0% 100%);
+        }
+        #three:checked ~ .img-1 img,
+        #three:checked ~ .img-2 img,
+        #three:checked ~ .img-3 img{
+        clip-path: circle(150% at 0% 100%);
+        }
+        #four:checked ~ .img-1 img,
+        #four:checked ~ .img-2 img,
+        #four:checked ~ .img-3 img,
+        #four:checked ~ .img-4 img{
+        clip-path: circle(150% at 0% 100%);
+        }
+        #five:checked ~ .img-1 img,
+        #five:checked ~ .img-2 img,
+        #five:checked ~ .img-3 img,
+        #five:checked ~ .img-4 img,
+        #five:checked ~ .img-5 img{
+        clip-path: circle(150% at 0% 100%);
+        }
+        .wrapper .sliders{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+        display: flex;
+        }
+        .wrapper .sliders label{
+        border: 2px solid rgb(142,197,252);
+        width: 13px;
+        height: 13px;
+        margin: 0 3px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+        #one:checked ~ .sliders label.one,
+        #two:checked ~ .sliders label.two,
+        #three:checked ~ .sliders label.three,
+        #four:checked ~ .sliders label.four,
+        #five:checked ~ .sliders label.five{
+        width: 35px;
+        border-radius: 14px;
+        background: rgb(142,197,252);
+        }
+        .sliders label:hover{
+        background: rgb(142,197,252);
+        }
+        input[type="radio"]{
+        display: none;
+        } */
+
+
+        /* On hover of .hover-before, show the sibling .hover-after */
+/* On hover of .hover-before, show the sibling .hover-after */
+/* On hover of .hover-before, show the sibling .hover-after */
+/* On hover of .hover-before, show the sibling .hover-after */
+/* Hide all hover-after content initially */
+/* Hide all hover-after content initially */
+.wrapper .hover-after {
+    display: none;
+}
+
+/* Show hover-after content for the checked radio button */
+#one:checked ~ .img-1 .hover-after,
+#two:checked ~ .img-2 .hover-after {
+    display: flex;
+}
+
+/* Combine with existing styles */
+.wrapper {
+    position: relative;
+    width: 65vw;
+    height: 500px;
+    border: 2px solid rgba(226, 226, 226, 0.764);
+}
+
+.wrapper .img {
+    position: relative; /* Change to relative */
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.7s;
+}
+
+.wrapper .sliders {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    display: flex;
+}
+
+.wrapper .sliders label {
+    border: 2px solid orange;
+    width: 13px;
+    height: 13px;
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#one:checked ~ .img-1 img,
+#two:checked ~ .img-1 img {
+    clip-path: circle(150% at 0% 100%);
+}
+
+#two:checked ~ .img-2 img {
+    clip-path: circle(150% at 0% 100%);
+}
+
+#one:checked ~ .sliders label.one,
+#two:checked ~ .sliders label.two {
+    width: 35px;
+    border-radius: 14px;
+    background: orange;
+}
+
+.sliders label:hover {
+    background: orange;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class="wrapper">
+      <input type="radio" name="slide" id="one" checked>
+      <input type="radio" name="slide" id="two"> -->
+      <!-- <input type="radio" name="slide" id="three">
+      <input type="radio" name="slide" id="four">
+      <input type="radio" name="slide" id="five"> -->
+      <!-- <div class="img img-1">
+        <div class="hover-before">
+          <img src="../utils/img/allevents.png" alt="">
+        </div>
+        <div class="hover-after">
+            <h1>Events conducted so far!</h1>
+        </div>
+      </div>
+      <div class="img img-2">
+        <div class="hover-before">
+          <img src="../utils/img/founders_meet.jpg" alt="">
+        </div>
+        <div class="hover-after">
+            <h1>Founders </h1>
+        </div>
+      </div> -->
+      <!-- <div class="img img-2">
+        <img src="../utils/img/bgimg.jpg"  alt="">
+      </div>
+      <div class="img img-3">
+        <img src="../utils/img/aboutbg.jpg"  alt="">
+      </div>
+      <div class="img img-4">
+        <img src="images/img-4.jpg" alt="">
+      </div>
+      <div class="img img-5">
+        <img src="images/img-5.jpg" alt=""> -->
+      <!-- </div> -->
+      <!-- <div class="sliders">
+        <label for="one" class="one"></label>
+        <label for="two" class="two"></label>
+        <label for="three" class="three"></label>
+        <label for="four" class="four"></label>
+        <label for="five" class="five"></label> 
+      </div>
+    </div>-->
+
+
+    <div class="wrapper">
+      <input type="radio" name="slider" id="one">
+      <input type="radio" name="slider" id="two">
+      
+      <div class="img img-1">
+          <div class="hover-before">
+              <img src="../utils/img/allevents.png" alt="">
+          </div>
+          <div class="hover-after">
+              <h1>Events conducted so far!</h1>
+          </div>
+      </div>
+  
+      <div class="img img-2">
+          <div class="hover-before">
+              <img src="../utils/img/founders_meet.jpg"  alt="">
+          </div>
+          <div class="hover-after">
+              <h1>Founders Meet Goa</h1>
+          </div>
+      </div>
+  
+      <!-- Add more .img divs for other images -->
+  
+      <div class="sliders">
+          <label for="one" class="one"></label>
+          <label for="two" class="two"></label>
+          <!-- Add labels for additional radio buttons -->
+      </div>
+  </div>
+  
+
+  </body>
+</html>

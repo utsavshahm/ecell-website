@@ -8,7 +8,7 @@
         <meta name="description" content="Course learning">
         <meta name="robots" content="index, follow">
         <link rel="stylesheet" href="./utils/styles/style.css">
-        <link rel="icon" href="./utils/img/E-Cell_logo.png" type="image/png">
+        <link rel="icon" href="./utils/img/icons/E-Cell_logo.png" type="image/png">
 <!--         <link rel="icon" href="./utils/img/E-Cell_logo.png"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -17,12 +17,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Comic+Neue:wght@300&family=Exo+2&family=Lexend+Deca:wght@100&family=Lora&family=Poppins:ital,wght@0,200;1,100&family=Raleway:wght@500&family=Varela+Round&family=Vazirmatn:wght@100&display=swap" rel="stylesheet">
 
         <title>Entrepreneurship Cell, IIT Goa</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         </head>
     <body>
         <nav id="navbar">
            
                 <div class="logo">
-                    <img src='./utils/img/Logo_no_backgroundfinal.png' alt="">
+                    <img src='./utils/img/icons/Logo_no_backgroundfinal.png' alt="">
                     <div><span>E</span>-Cell</div>
                 </div>
 
@@ -31,13 +32,14 @@
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="./pages/innowave.html">InnoWave</a></li>
                         <li><a href="#collaborate">Collaborate</a></li>
                         <li><a href="./pages/team.html">Team</a></li>
                     </ul>
                 </div>
                 
-                <div id="hamburger"><img src='./utils/img/hamburger.png' alt=''></div>
+                <div id="hamburger"><img src='./utils/img/icons/hamburger.png' alt=''></div>
         </nav>
 
             <div class="home">
@@ -68,6 +70,7 @@
                                     <span>l</span>
                                     <span>l</span>
                                 </p>
+                                <!-- <p class="head-name">Entrepreneurship Cell</p> -->
                                 <p class="colored">Indian Institute of Technology Goa</p>
                             </div>
                             <span class="tagline" id="tagline"></span>
@@ -79,74 +82,96 @@
         <div class="rest-body">
                 <div class="container">
         
-                    <div class="about-content" id="about">
+                    <div class="about-content" id="about" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000" data-aos-once="false" data-aos-easing="ease-in-out">
         
                         <h1>About Us</h1>
                         <p>
                             <b> Ecell of IIT Goa</b>: Where Every Small Idea Matters
                 
                             In the heart of innovation and entrepreneurship, Ecell of IIT Goa proudly stands as the catalyst for change. We believe that every small idea carries the potential to create something extraordinary. Our mission is simple yet powerful: to nurture, support, and celebrate these small ideas, transforming them into impactful ventures. With a vibrant community of like-minded individuals, we foster a culture of creativity and collaboration. Embrace the power of small ideas, and together, let's prove that even the smallest of ideas can make a big difference.</p>
-        
-        
+                            
                     </div>
 
                     <div class="events">
                         <div class="events-first">
-                            <div class="event-card workshops">
+                            <div class="event-card workshops" data-aos="fade-right" data-aos-delay="70" data-aos-duration="1000">
                                 <div class="card-head">
-                                    <img src="./utils/img/icons8-bulb-64.png" alt="">
+                                    <img src="./utils/img/icons/icons8-bulb-64.png" alt="">
                                     <h3>Workshops</h3>
                                 </div>
 
-                                <div class="card-desc">Ecell of IIT Goa conducts diverse workshops, offering hands-on learning experiences, expert guidance, and a platform for creative exploration. We empower individuals to transform ideas into ventures, catering to a wide range of interests and aspirations.</div>
+                                <div class="card-desc">
+                                    We conduct diverse workshops, offering hands-on learning experiences, expert guidance, and a platform for creative exploration. We empower individuals to transform ideas into ventures, catering to a wide range of interests and aspirations.
+                                </div>
+                                
                             </div>
-                            <div class="event-card">
+                            <div class="event-card" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="card-head">
-                                    <img src="./utils/img/icons8-leaderboard-53.png" alt="">
+                                    <img src="./utils/img/icons/icons8-leaderboard-53.png" alt="">
                                     <h3>Competitions</h3>
                                 </div>
 
                                 <div class="card-desc">
-                                    Ecell of IIT Goa is your launchpad for competition success. We foster a competitive spirit and provide a platform for you to shine in entrepreneurial and innovation challenges. Join us to conquer the competition and make your mark. </div>
+                                    Ecell IIT Goa is your launchpad for competition success. We foster a competitive spirit and provide a platform for you to shine in entrepreneurial and innovation challenges. Join us to conquer the competition and make your mark. </div>
                             </div>
 
-                            <div class="event-card">
+                            <div class="event-card" data-aos="fade-left" data-aos-delay="70" data-aos-duration="1000">
                                 <div class="card-head">
-                                    <img src="./utils/img/icons8-chat-64.png" alt="">
+                                    <img src="./utils/img/icons/icons8-chat-64.png" alt="">
                                     <h3>Talks</h3>
                                 </div>
 
-                                <div class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo error ut illo quisquam ad quam! A esse adipisci numquam perferendis molestiae beatae quibusdam, debitis rerum accusamus quo! Sed blanditiis corporis totam iusto distinctio unde quidem.</div>
+                                <div class="card-desc">
+                                    We host engaging talk sessions with successful entrepreneurs and industry experts, delving into various subjects such as entrepreneurial experiences, emerging opportunities, and inspiring students to chase their entrepreneurial aspirations.</div>
                             </div>
                         </div>   
-                        <!-- <div class="events-first">
-                            
-                            <div class="event-card">
-                                <div class="card-head">
-                                    <img src="utils/icons8-writing-64.png" alt="">
-                                    <h3>InnoWave: Entrepreneural Magazine</h3>
-                                </div>
-
-                                <div class="card-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo error ut illo quisquam ad quam! A esse adipisci numquam perferendis molestiae beatae quibusdam, debitis rerum accusamus quo! Sed blanditiis corporis totam iusto distinctio unde quidem.</div>
-                            </div>
-                        </div>    -->
                     </div>
 
+                    <div class="photo-gallery" id="gallery" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                        <h1>E-Cell Gallery: Rediscover Our Moments</h1>
+                        <div class="wrapper">
+                            <input type="radio" name="slide" id="one" checked>
+                            <input type="radio" name="slide" id="two">
+                            <input type="radio" name="slide" id="three">
+                            <input type="radio" name="slide" id="four">
 
-                    <div class="innowave-desc" id="innowave">
+                            <div class="img img-1">
+                                <img src="./utils/img/founders_meet.jpg" alt="">
+                            </div>
+                            
+                            <div class="img img-2">
+                                <img src="./utils/img/startupgoa.jpg"  alt="">
+                            </div>
+                            
+                            <div class="img img-3">
+                                <img src="./utils/img/startupgoa2.jpg"  alt="">
+                            </div>
+
+                            <div class="img img-4">
+                              <img src="./utils/img/allevents.png" alt="">
+                            </div>
+
+
+                            <div class="sliders">
+                              <label for="one" class="one"></label>
+                              <label for="two" class="two"></label>
+                              <label for="three" class="three"></label>
+                              <label for="four" class="four"></label>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="innowave-desc" id="innowave" data-aos="zoom-out" data-aos-delay="80" data-aos-duration="1000">
         
                         <h1>InnoWave: Entrepreneurial Magazine of IIT Goa</h1>
                         <p>
-                            <b> Ecell of IIT Goa</b>: Where Every Small Idea Matters
-                
-                            In the heart of innovation and entrepreneurship, Ecell of IIT Goa proudly stands as the catalyst for change. We believe that every small idea carries the potential to create something extraordinary. Our mission is simple yet powerful: to nurture, support, and celebrate these small ideas, transforming them into impactful ventures. With a vibrant community of like-minded individuals, we foster a culture of creativity and collaboration. Embrace the power of small ideas, and together, let's prove that even the smallest of ideas can make a big difference.</p>
+                            <p><b>Innowave</b>, the entrepreneurial magazine of E-cell, serves as a comprehensive and dynamic source of information, capturing the pulse of entrepreneurial activities within the institute. Innowave proudly highlights the entrepreneurial achievements of IIT Goa students, providing a platform to celebrate their innovative ventures and noteworthy milestones.With a commitment to fostering a culture of innovation and ambition, Innowave plays a pivotal role in connecting, informing, and inspiring the entrepreneurial community at IIT Goa.</p>
 
                         <button class="read-btn"><a href="./pages/innowave.html">Read Here</a></button>
         
         
                     </div>
         
-                    <div class="collab-container" id="collaborate">
+                    <div class="collab-container" id="collaborate" data-aos="fade-out" data-aos-delay="90" data-aos-duration="1000">
                         <h1>Collaborate With Us</h1>
                         <form action="https://api.sheetmonkey.io/form/hUEJpiVCetH1uuZBmZFCyG" method="post" id="my-form" target="_blank" >
                             <!-- <input 
@@ -212,9 +237,9 @@
 
         </div>
 
-        <footer>
+        <footer >
 
-            <div class="footer-main-content">
+            <div class="footer-main-content" >
 
 
                 <div class="footer-item address">
@@ -262,6 +287,12 @@
 
     </body>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
     <script>
         let navbar = document.querySelector('#navbar')
         let navbarLinks = document.querySelector('.navbar-items ul');
@@ -270,12 +301,12 @@
         var isShow = false;
         function show(){
             navbarLinks.style.left = "0";
-            hamburgerBtn.innerHTML = "<img src='./utils/img/close.png' alt=''>";
+            hamburgerBtn.innerHTML = "<img src='./utils/img/icons/close.png' alt=''>";
             isShow = true;
         }
         function hide(){
             navbarLinks.style.left = "-100%";
-            hamburgerBtn.innerHTML = "<img src='./utils/img/hamburger.png' alt=''>";
+            hamburgerBtn.innerHTML = "<img src='./utils/img/icons/hamburger.png' alt=''>";
             isShow = false;
         }
 
@@ -301,7 +332,7 @@
 
 
         var typed = new Typed('#tagline', {
-        strings: ['Ignite', 'Ideate', 'Innovate', 'Inspire', 'Where every small Idea matters!'],
+        strings: ['Ignite', 'Ideate', 'Innovate', 'Inspire', 'Where every small idea matters!'],
         typeSpeed: 75,
         loop:true
         });

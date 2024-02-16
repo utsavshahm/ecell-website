@@ -130,6 +130,10 @@ nav a:hover::after{
     margin-bottom : 20px;
     letter-spacing : 1.5px;
 }
+
+/* .head-name{
+    color: orange;
+} */
 .colored{
     color : white;
 }
@@ -207,19 +211,12 @@ nav a:hover::after{
 }
 .typewriting span:nth-child(21){
     animation-delay : 4.75s;
-}
+} 
+ 
 
 @keyframes animate{
     0%, 100%{
         color : white;
-        filter : blur(1px);
-        text-shadow:
-                    0 0 20px orange,
-                    /* 0 0 40px orange,
-                    0 0 80px orange,
-                    0 0 120px orange, */
-                    0 0 200px orange,
-                    0 0 400px orange;
     }
     5%, 95%{
         color : orange;
@@ -282,6 +279,8 @@ nav a:hover::after{
     word-spacing : 5px;
     font-family : "Poppins";
 }
+
+
 .events-first{
     display: flex;
     justify-content: space-between;
@@ -296,7 +295,7 @@ nav a:hover::after{
     /* justify-content: space-between; */
     align-items: center;
     max-width : 350px;
-    min-height: 500px;
+    min-height: 600px;
     transition : 0.5s ease;
     cursor : pointer;
 }
@@ -316,11 +315,100 @@ nav a:hover::after{
     font-family: 'Poppins';
     line-height: 1.7;
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.18rem;
     margin: 1vw 2vw;
     word-spacing: 2px;
     color : #ccc;
 }
+
+
+
+/* Photo gallery section */
+.photo-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2em;
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+.photo-gallery h1{
+    margin: 1.2rem 0;
+    font-size: 2.2rem;
+    color: #fcc419;
+    letter-spacing : 1.5px;
+}
+.wrapper{
+    position: relative;
+    width: 65vw;
+    height: 500px;
+    border: 2px solid rgba(226, 226, 226, 0.764);
+    }
+    .wrapper .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+    .wrapper .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(0% at 0% 100%);
+    transition: all 0.7s;
+    }
+    #one:checked ~ .img-1 img{
+    clip-path: circle(150% at 0% 100%);
+    }
+
+    #two:checked ~ .img-1 img,
+    #two:checked ~ .img-2 img{
+    clip-path: circle(150% at 0% 100%);
+    }
+
+    #three:checked ~ .img-1 img,
+    #three:checked ~ .img-2 img,
+    #three:checked ~ .img-3 img{
+    clip-path: circle(150% at 0% 100%);
+    }
+    #four:checked ~ .img-1 img,
+    #four:checked ~ .img-2 img,
+    #four:checked ~ .img-3 img,
+    #four:checked ~ .img-4 img{
+    clip-path: circle(150% at 0% 100%);
+    }
+    .wrapper .sliders{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    display: flex;
+    }
+    .wrapper .sliders label{
+    border: 2px solid orange;
+    width: 13px;
+    height: 13px;
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    #one:checked ~ .sliders label.one,
+    #two:checked ~ .sliders label.two,
+    #three:checked ~ .sliders label.three,
+    #four:checked ~ .sliders label.four{
+    width: 35px;
+    border-radius: 14px;
+    background: orange;
+    }
+    .sliders label:hover{
+    background: orange;
+    }
+    input[type="radio"]{
+    display: none;
+    }
 
 
 /* Innowave section : only button */
@@ -540,6 +628,12 @@ footer ul li a:hover{
     .about-content h1{
         font-size : 2.2rem;
     }
+    .about-content h1{
+        font-size : 2.2rem;
+    }
+    .photo-gallery h1{
+        font-size : 2.2rem;
+    }
     .innowave-desc h1{
         font-size : 2.2rem;
     }
@@ -551,6 +645,10 @@ footer ul li a:hover{
     }
     .card-desc{
         font-size : 1.2rem;
+    }
+    .wrapper{
+        width: 80vw;
+        height: 290px;
     }
 }
 
@@ -577,6 +675,9 @@ footer ul li a:hover{
     textarea{
         height: 15vh;
     }
+    .wrapper{
+        height: 325px;
+    }
 
 }
 
@@ -592,6 +693,9 @@ footer ul li a:hover{
     }
     .innowave-desc p{
         font-size : 1.2rem;
+    }
+    .photo-gallery h1{
+        font-size : 2.2rem;
     }
     .card-desc{
         font-size : 1.3rem;
@@ -648,5 +752,9 @@ footer ul li a:hover{
     }
     .footer-item{
         font-size: 0.9rem;
+    }
+    .wrapper{
+        height: 250px;
+        width: 85vw;
     }
 }
